@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_SIZE = "base"
+MODEL_SIZE = "tiny"
 print(f"Cargando modelo Whisper ({MODEL_SIZE})...")
 model = WhisperModel(MODEL_SIZE, device="cpu", compute_type="int8")
 print("¡Modelo cargado correctamente!")
