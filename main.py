@@ -5,12 +5,15 @@ from fastapi.responses import FileResponse, JSONResponse, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from faster_whisper import WhisperModel
 from deep_translator import MyMemoryTranslator
+from fastapi.staticfiles import StaticFiles
 import edge_tts
 
 app = FastAPI(
     title="Voice-to-Voice Translator API",
     version="1.3"
 )
+
+app.mount("/utils", StaticFiles(directory="utils"), name="utils")
 
 # Configuración de CORS
 app.add_middleware(
