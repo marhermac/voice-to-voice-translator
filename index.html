@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Voice-to-Voice Translator - Portafolio</title>
+    <title>Ingleslibre</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 650px; margin: 40px auto; padding: 20px; background: #f4f4f9; color: #333; }
         .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
@@ -19,11 +19,17 @@
         audio { width: 100%; margin-top: 10px; }
         .loading { display: none; text-align: center; color: #007BFF; font-weight: bold; margin-top: 15px; }
         .status-rec { text-align: center; font-weight: bold; color: #dc3545; margin-top: 10px; }
+        
+        /* Estilos para el footer de patrocinadores */
+        .footer-sponsors { margin-top: 40px; border-top: 1px dashed #cbd5e1; padding-top: 20px; text-align: center; font-size: 13px; color: #64748b; }
+        .sponsors-logos { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 12px; flex-wrap: wrap; }
+        .sponsors-logos img { height: 64px; width: auto; object-fit: contain; opacity: 0.85; transition: opacity 0.2s; }
+        .sponsors-logos img:hover { opacity: 1;transform: scale(1.5);}
     </style>
 </head>
 <body>
     <div class="card">
-        <h2>🎙️ Voice-to-Voice Translator</h2>
+        <h2>🎙️ Ingleslibre</h2>
         <p>Graba tu voz en español o sube un archivo de audio para obtener la traducción en texto y voz en inglés.
             Practica tu conversacion o Aprende con tus propias palabras</p>
         <p>Elige una opción para probar el pipeline de IA:</p>
@@ -140,13 +146,44 @@
             }
         }
     </script>
-    <!-- 🌟 Tu firma y enlace al portafolio justo aquí, después del script -->
+
+    <!-- 🌟 Firma y enlace al portafolio -->
     <footer style="text-align: center; margin-top: 30px; color: #666; font-size: 14px;">
         <p>Creado por <strong>Mario Maciel</strong> | Más info en: 
             <a href="https://marhermac.github.io/mariomaciel/" target="_blank" style="color: #007BFF; text-decoration: none;">
                 marhermac.github.io/mariomaciel/
             </a>
         </p>
+
+        <!-- Apartado de Agradecimientos / Recursos Gratuitos -->
+        <div class="footer-sponsors">
+            <p>Este recurso es gratuito gracias a:</p>
+            <div class="sponsors-logos">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                </a>
+                <a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI">
+                </a>
+            </div>
+        
+        </div>
+
+         <!-- Apartado de Agradecimientos / Recursos Gratuitos -->
+        <div class="footer-sponsors">
+            <p>Colaboran Económicamente los siguientes emprendimientos:</p>
+            <div class="sponsors-logos">
+                <a href="https://www.facebook.com/clavelinaplantas" target="_blank" rel="noopener noreferrer">
+                    <img src="utils/logoclavelina.png" alt="Clavelina Plantas">
+                </a>
+                <a href="https://www.facebook.com/Armartaller/" target="_blank" rel="noopener noreferrer">
+                    <img src="utils/tallerarmarlogo.png" alt="Armar Taller">
+                </a>
+                <a href="https://www.facebook.com/enmonopatinvoy/" target="_blank" rel="noopener noreferrer">
+                    <img src="utils/enmonopatinvoy.png" alt="En Monopatín Voy">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
