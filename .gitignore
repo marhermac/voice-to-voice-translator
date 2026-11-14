@@ -1,20 +1,15 @@
-# Entornos y editores
-.venv/
-.vscode/
+﻿.venv/
+venv/
+env/
 __pycache__/
-*.pyc
-
-# Carpetas de datos locales, modelos y audios temporales
-audio/
+*.py[cod]
+*.class
+.vscode/
+.idea/
 models/
-speech/
-translator/
-TraductorVoz_v1/
-temp/
-
-# Archivos sueltos antiguos o de prueba
-app.py
-app_streamlit.py
-prueba_tts.py
-test_listener.py
-.env
+audio/*.mp3
+audio/*.wav
+*.mp3
+*.wav
+Thumbs.db
+.DS_Store

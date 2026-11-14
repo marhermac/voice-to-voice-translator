@@ -61,9 +61,11 @@ async def translate_voice(file: UploadFile = File(...)):
         await communicate.save(output_audio_path)
         
     except Exception as e:
-        if os.path.exists(temp_in_path):
-            os.remove(temp_in_path)
-        raise HTTPException(status_code=500, detail=f"Error en el pipeline de IA: {str(e)}")
+            import traceback
+            traceback.print_exc() # <-- Esto va a imprimir el error real en rojo en tu consola de Uvicorn
+            if os.path.exists(temp_in_path):
+                os.remove(temp_in_path)
+            raise HTTPException(status_code=500, detail=f"Error en el pipeline de IA: {str(e)}")
 
     finally:
         if os.path.exists(temp_in_path):
